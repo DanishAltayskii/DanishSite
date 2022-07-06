@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путеводитель</title>
+</head>
+<style>
+.rounded {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+h1{
+    text-align: center;
+}
+body{
+    background: rgb(144, 192, 152);
+}
+
+</style>
+<body><header>
+    <h1>Путеводители</h1>
+    <div class="container">
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="o nas.html">Немного об Алтае</a></li>
+    <li><a href="kontakts.html">Контакты</a></li>
+    <li><a href="gallery.html">Фото</a></li>
+    <li><a href="ssilki.html">Ссылки</a></li>
+    <li><a href="">Путеводитель</a></li>
+  </ul>
+</nav>
+    </div></header>
+   
+    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10231/altai-republic/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Республика Алтай</a><a href="https://yandex.ru/maps/10231/altai-republic/?ll=87.015454%2C50.736240&utm_medium=mapframe&utm_source=maps&z=10" style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Республики Алтай с городами — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CBBpNCVzGB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <h3>Внизу будет представлен список лучших путеводителей, так как сам я там не был, это пока лишь мечта...</h3>
+    <nav>
+        <ol class="rounded">
+          <li><a href="https://biletix.ru/blog/posts/puteshestvie-po-altayu-na-mashine-samyj-podrobnyj-putevoditel/">Первый путеводитель</a></li>
+          <li><a href="https://2gis.ru/gornoaltaysk/guidebook">Стандартный и, вероятно, самый скучный</a></li>
+          <li><a href="https://www.tourister.ru/world/europe/russia/region/respublika_altay">Третий путеводитель</a></li>
+          <li><a href="https://bolshayastrana.com/blog/puteshestviya-po-altayu-71">СверхПодробный путеводитель</a></li>
+          <li><a href="https://211company.ru/blog/putevoditel_po_gornomu_altayu/">Классный, подробный, в виде дневника</a></li>
+        </ol>
+      </nav>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+     .container {
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block; /*один из способов разместить элементы в строку*/
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  line-height: 38px;
+}
+header {
+ background: #00b0d8 url(grad.png) repeat-x;
+}
+.header-bg {
+ background: url(head.png) ; 
+ height: 45px; /* Высота шапки */
+ text-align: center; /* Выравнивание по центру */
+}
+.header-bg img {
+ position: relative; /* Относительное позиционирование */
+ top: 40px; /* Сдвигаем картинку вниз */
+}
+footer {
+    position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+}
+h1{
+    text-align: center;
+}
+body{
+    background: url(фон.jpg);
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+TABLE {
+    width: 100%; /* Ширина таблиц */
+   }
+   TD {
+    vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+   }
+   #col1 {
+    width: 33%; /* Ширина первой колонки */
+    background: rgb(83, 75, 42); /* Цвет фона первой колонки */
+   }
+   #col2 {
+    width: 33%;
+    background: #7676df; /* Цвет фона второй колонки */
+   }
+   #col3 {
+    width: 33%; /* Ширина третьей колонки */
+    background: #fc0; /* Цвет фона третьей колонки */
+   }
+   #col1, #col2, #col3 {
+    padding: 5px; /* Поля вокруг текста */
+   }
+</style>
+</head>
+<body>
+     <header>
+        <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="o nas.html">Немного об Алтае</a></li>
+        <li><a href="kontakts.html">Контакты</a></li>
+        <li><a href="gallery.html">Фото</a></li>
+        <li><a href="ssilki.html">Ссылки</a></li>
+        <li><a href="put.html">Путеводитель</a></li>
+      </ul>
+    </nav>
+        </div></header>
+    <div class="main"> <h1>Алтайский Край</h1>
+        <h3>«… Могу только в нескольких словах рассказать, какой уголок нашей страны больше всего понравился, пришелся по душе мне… Это Алтай. В жизни не видел ничего более прекрасного. Я жил там в юности – четыре года – и до сих пор вспоминаю это время как чудесный сон…»
+        </h3> <div class="container"> </div></div>
+        <form>
+            <input type="text" placeholder="Искать здесь...">
+            <button type="submit"></button>
+          </form>
+
+    <footer>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+             <td id="col1"><a href = "https://www.youtube.com/watch?v=dbybAyAyrp8">YouTube</a></td>
+             <td>
+              <table cellpadding="0" cellspacing="0">
+               <tr>
+                <td id="col2"><a href="https://ru.wikipedia.org/wiki/Республика_Алтай">Wikipedia</a></td>
+                <td id="col3"><a href="https://www.aviasales.ru/cities/altai-aat">Билеты</a></td>
+               </tr>
+              </table>
+             </td>
+            </tr>
+           </table>
+    </footer>
+</body>
+</html>
